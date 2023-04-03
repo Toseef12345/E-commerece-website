@@ -1,0 +1,16 @@
+{
+  "seller": [
+    {
+      "name": "toseef dar",
+      "email": "toseefdar534@gmail.com",
+      "phone": "03265652923",
+      "id": 1
+    },
+    {
+      "name": "naveed",
+      "email": "naveeddar534@gmail.com",
+      "phone": "03456187930",
+      "id": 2
+    }
+  ]
+}
