@@ -8,14 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component'
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
     SellerAuthComponent,
-    FooterComponent
+    FooterComponent,
+    SellerDashboardComponent
   ],
   imports: [
     BrowserModule,
