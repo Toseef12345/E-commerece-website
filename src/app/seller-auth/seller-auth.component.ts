@@ -9,19 +9,37 @@ import { Router } from '@angular/router';
   styleUrls: ['./seller-auth.component.scss']
 })
 export class SellerAuthComponent implements OnInit {
-  sellerForm!: FormGroup<any>;
-  constructor(private fb: FormBuilder, private sellerService: SellerService,private router:Router) {
-    this.sellerForm = this.fb.group({
+  sellerSignupForm!: FormGroup;
+  sellerLoginForm!: FormGroup;
+
+  isLogin: boolean = false
+  constructor(private fb: FormBuilder, private sellerService: SellerService, private router: Router) {
+    this.sellerSignupForm = this.fb.group({
       name: [''],
       email: [],
-      phone: []
+      password: []
     })
-   }
+    this.sellerLoginForm = this.fb.group({
+      email: [],
+      password: []
+    })
+  }
   ngOnInit(): void {
-   this.sellerService.sellerReload()
+    this.sellerService.sellerReload()
   }
   signUp(): void {
-    this.sellerService.postSellerFormCredentials(this.sellerForm.value)
+    this.sellerService.postSellerFormCredentials(this.sellerSignupForm.value)
     this.router.navigate(['seller-auth'])
+  }
+  sellerLogin() {
+    this.isLogin = true
+  }
+  sellerSignUp() {
+    this.isLogin = false
+
+  }
+  public login(): void {
+    console.log(this.sellerLoginForm.value);
+
   }
 }
