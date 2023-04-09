@@ -1,46 +1,16 @@
 {
   "seller": [
     {
-      "name": "toseef dar",
+      "name": "toseefdar",
       "email": "toseefdar534@gmail.com",
-      "phone": "03265652923",
+      "password": "Iphone8plus",
       "id": 1
     },
     {
-      "name": "naveed",
+      "name": "Naveeddar",
       "email": "naveeddar534@gmail.com",
-      "phone": "03456187930",
+      "password": "Iphone11pro",
       "id": 2
-    },
-    {
-      "name": "",
-      "email": null,
-      "phone": null,
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": null,
-      "phone": null,
-      "id": 4
-    },
-    {
-      "name": "umer",
-      "email": "umer534@gmail.com",
-      "phone": "xjcbxjcvk",
-      "id": 5
-    },
-    {
-      "name": "yrdyh",
-      "email": "hdh",
-      "phone": "hfdh",
-      "id": 6
-    },
-    {
-      "name": "dgxg",
-      "email": "gdfgdg",
-      "phone": "gdgdg",
-      "id": 7
     }
   ]
 }
