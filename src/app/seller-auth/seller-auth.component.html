@@ -17,7 +17,7 @@
     </div>
 
     <!---------------------------------my-2 Login Area------------------------------------------>
-    <div *ngIf="isLogin" class="seller-signup-form w-[50%] m-auto  ">
+    <div *ngIf="isLogin" class="seller-login-form w-[50%] m-auto  ">
         <h1 class="w-[60%] m-auto text-purple-600 my-2">Seller Login</h1>
         <form class="flex flex-col" [formGroup]="sellerLoginForm" (ngSubmit)="login()">
 
@@ -31,4 +31,5 @@
 
         </form>
     </div>
+    
 </div>

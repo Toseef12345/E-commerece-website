@@ -16,19 +16,20 @@ export class SellerAuthComponent implements OnInit {
   constructor(private fb: FormBuilder, private sellerService: SellerService, private router: Router) {
     this.sellerSignupForm = this.fb.group({
       name: [''],
-      email: [],
-      password: []
+      email: [''],
+      password: ['']
     })
     this.sellerLoginForm = this.fb.group({
-      email: [],
-      password: []
+      email: [''],
+      password: ['']
     })
   }
   ngOnInit(): void {
     this.sellerService.sellerReload()
+    this.sellerService.sellerLoginReload()
   }
   signUp(): void {
-    this.sellerService.postSellerFormCredentials(this.sellerSignupForm.value)
+    this.sellerService.userSignup(this.sellerSignupForm.value)
     this.router.navigate(['seller-auth'])
   }
   sellerLogin() {
@@ -40,6 +41,7 @@ export class SellerAuthComponent implements OnInit {
   }
   public login(): void {
     console.log(this.sellerLoginForm.value);
-
+    this.sellerService.userLogin(this.sellerLoginForm.value)
+   
   }
 }

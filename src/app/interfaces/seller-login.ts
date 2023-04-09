@@ -1,4 +1,4 @@
-export interface SellerInterface{
+export interface SellerLoginInterface{
     email:String,
     password:String
 }
