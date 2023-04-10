@@ -9,7 +9,8 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component'
+import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
+import { AddProductComponent } from './add-product/add-product.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.co
     HomeComponent,
     SellerAuthComponent,
     FooterComponent,
-    SellerDashboardComponent
+    SellerDashboardComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

@@ -2,24 +2,26 @@
     <nav class="navbar flex justify-around items-center">
         <h1 class="text-purple-600 text-[28px] font-semibold cursor-pointer"><a routerLink="/"> E-COMM</a></h1>
         <div class="search " *ngIf="whoIsLoggedIn==='simple'">
-            <input type="text" class="border border-purple-600 mx-3 outline-none p-1 rounded-sm w-96 text-sm" placeholder="Search Products">
+            <input type="text" class="border border-purple-600 mx-3 outline-none p-1 rounded-sm w-96 text-sm"
+                placeholder="Search Products">
             <button class="search-button text-purple-500 hover:text-yellow-200">
                 Search
             </button>
         </div>
         <div class="navigation-menu" [ngSwitch]="whoIsLoggedIn">
-            <ul class="flex" *ngSwitchCase="'simple'" >
+            <ul class="flex" *ngSwitchCase="'simple'">
                 <li class="mx-3  text-purple-600 hover:text-yellow-200"><a routerLink="/">Home</a></li>
                 <li class="mx-3  text-purple-600 hover:text-yellow-200"><a routerLink="/seller-auth">Seller</a></li>
                 <li class="mx-3  text-purple-600 hover:text-yellow-200"><a href="#">Login</a></li>
                 <li class="mx-3  text-purple-600 hover:text-yellow-200"><a href="#">Cart(0)</a></li>
 
             </ul>
-            <ul class="flex" *ngSwitchCase="'seller'" >
-                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a routerLink="/">Product List</a></li>
-                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a routerLink="/">Add Product</a></li>
-                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a href="#">Search Product</a></li>
-                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a href="#">Logout</a></li>
+            <ul class="flex" *ngSwitchCase="'seller'">
+                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a>Product List</a></li>
+                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a>Add Product</a></li>
+                <li class="mx-3  text-purple-600 hover:text-yellow-200"><a>{{userName|titlecase}}</a></li>
+                <li class="mx-3  text-purple-600 hover:text-yellow-200 cursor-pointer"><a (click)="logout()">Logout</a>
+                </li>
 
             </ul>
         </div>

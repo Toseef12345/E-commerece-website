@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
 import { AuthGuard } from './auth-guard/auth.guard';
+import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
     path:'seller-dashboard',
     component:SellerDashboardComponent,
     canActivate:[AuthGuard]
+  },
+  {
+    path:'add-product',
+    component:AddProductComponent
   }
 ];
 
