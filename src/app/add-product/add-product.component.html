@@ -1,1 +1,20 @@
-<p>add-product works!</p>
+<div class="add-product w-[50%] m-auto">
+    <h1 class="w-[60%] m-auto text-purple-600 my-2">Add New Product</h1>
+    <div class=" bg-green-300 p-2 w-[80%] ml-1 my-2" *ngIf="addProductSuccessMessage">{{addProductSuccessMessage}}</div>
+    <form (ngSubmit)="addProduct()" [formGroup]="addProductForm">
+        <input formControlName="title" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%]"
+            type="text" placeholder="Enter Product Title">
+        <input formControlName="color" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%]"
+            type="text" placeholder="Enter Color Of Product">
+        <input formControlName="category" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%]"
+            type="text" placeholder="Enter product category">
+        <input formControlName="price" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%]"
+            type="text" placeholder="Enter product price">
+        <input formControlName="image" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%]"
+            type="text" placeholder="Enter product image url">
+        <textarea formControlName="desc" class="my-2 border border-gray-500 m-1 px-2 py-2 outline-none w-[80%] h-[70%]"
+             placeholder="Enter product desc here"></textarea>
+        <button class="border border-gray-500 w-[80%] m-1 py-2 bg-purple-600 hover:bg-purple-500 " type="submit">Add Product</button>
+
+    </form>
+</div>
