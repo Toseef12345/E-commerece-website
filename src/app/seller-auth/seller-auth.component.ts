@@ -40,7 +40,6 @@ export class SellerAuthComponent implements OnInit {
 
   }
   public login(): void {
-    console.log(this.sellerLoginForm.value);
     this.sellerService.userLogin(this.sellerLoginForm.value)
    
   }
