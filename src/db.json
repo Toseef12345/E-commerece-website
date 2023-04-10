@@ -12,5 +12,25 @@
       "password": "Iphone11pro",
       "id": 2
     }
+  ],
+  "product": [
+    {
+      "title": "Iphone 11 pro max",
+      "color": "black",
+      "category": "Iphone",
+      "price": "120k",
+      "image": "fjshkfjhdskfhuiewyoi",
+      "desc": "I am the seller of Iphone",
+      "id": 1
+    },
+    {
+      "title": "Iphone 8 plus",
+      "color": "silver",
+      "category": "Iphone",
+      "price": "70k",
+      "image": "fyiedghiufkhdk",
+      "desc": "weuiiwqe fkjdhkf dfkufh",
+      "id": 2
+    }
   ]
 }
